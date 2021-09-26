@@ -38,10 +38,10 @@ body {
         justify-content: center;
 }
     .title h1 {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
     .title p {
-        padding-right: 1em;
+        padding-right: 3em;
     }
 
 /* =======================================*/
@@ -58,6 +58,8 @@ body {
     cursor: pointer;
     box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
 }
+    .subscribe:hover{filter: brightness(1.2)}
+
     .subscribe p {
         font-weight: 500;
     }
@@ -77,6 +79,9 @@ body {
     padding: 1em;
     box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
 }
+    .form .input {
+        width: 100%;
+    }
     .form input {
         width: 100%;
         padding: 1.2em;
@@ -84,21 +89,30 @@ body {
         margin-bottom: .8em;
         outline: none;
         border: 1px solid rgb(197, 196, 196);
+        
     }
     .form input::placeholder {
         padding: 1em;
     }
     .form .error {
         width: 100%;
-        color: var(--black);
         margin-bottom: .5em;
         text-align: right;
         color: var(--red);
         font-weight: 300;
+        display: none;
+        
     }
-        .show {
-            display: none;
+    /* Error Handling class */
+        .show p{
+            display: block !important;
         }
+        .show input {
+            background-image: url(./images/icon-error.svg);
+            background-repeat: no-repeat;
+            background-position: center right 10px;
+        }
+    /* ==================================================== */
 
     .form button {
         width: 100%;
@@ -112,6 +126,7 @@ body {
         margin-bottom: 1em;
         cursor: pointer;
     }
+        .form button:hover{filter: brightness(1.1)}
 
     .form .terms {
         color: #808080;
@@ -122,6 +137,7 @@ body {
     }
     .form p span {
         color: var(--red);
+        cursor: pointer;
     }
 
 
