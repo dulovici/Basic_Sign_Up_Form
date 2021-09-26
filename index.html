@@ -2,13 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
   <title>Intro component with sign up form</title>
 </head>
 <body>
-    <h1>Dev</h1>
+    <div class="container">
+        <div class="title">
+            <h1>Learn to code by <br> watching others.</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable</p>
+        </div>
+        <main class="content">
+            <div class="subscribe">
+                <p>Try it free 7 days <span>then $20/mo.thereafter</span></p>
+            </div>
+            <article class="form">
+                <input type="text" placeholder="First Name">
+                <p class="error show">First Name cannot be empty</p>
+
+                <input type="text" placeholder="Last Name">
+                <p class="error show">Last Name cannot be empty</p>
+
+                <input type="text" placeholder="Email Adress">
+                <p class="error show">Looks like this is not an email</p>
+                
+                <input type="text" placeholder="Password">
+                <p class="error show">Password cannot be empty</p>
+
+                <button>CLAIM YOUR FREE TRIAL</button>
+
+                <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+            </article>
+        </main>
+    </div>
 </body>
 </html>
