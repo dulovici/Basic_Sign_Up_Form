@@ -139,6 +139,9 @@ body {
         color: var(--red);
         cursor: pointer;
     }
+    .form p span:hover {
+        filter: saturate(4);
+    }
 
 
 
