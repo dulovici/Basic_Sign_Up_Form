@@ -127,15 +127,14 @@ body {
 
 
 /* Media */
-
 @media (max-width: 920px) {
     .container {
-        padding: 1em;
+        padding: 2em;
         width: 100%;
     }
 }
 
-/* @media (max-width: 620px) {
+@media (max-width: 620px) {
     body {
         background-image: url(./images/bg-intro-mobile.png);
         background-repeat: no-repeat;
@@ -147,6 +146,24 @@ body {
         align-items: center;
         margin-top: 0;
         width: 100%;
+        padding: 2em;
     }
-} */
+
+    .title {
+        width: 100%;
+        text-align: center;
+        margin-top: 3em;
+
+    }
+        .title h1 {
+            margin-bottom: 1em;
+        }
+        .title p {
+            margin-bottom: 3em;
+        }
+
+    .content {
+        width: 100%;
+    }
+}
 
