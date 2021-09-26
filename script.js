@@ -11,6 +11,8 @@ function checkEmail() {
     re.test(email.firstElementChild.value) 
     ? email.classList.remove('show')
     : email.classList.add('show');
+
+    email.firstElementChild.placeholder = 'email@example/com';
 }
 
 function checkInputs() {
@@ -22,4 +24,8 @@ function checkInputs() {
 }
 
 registerButton.addEventListener('click', checkInputs)
+
+
 })()
+
+
