@@ -25,7 +25,5 @@ function checkInputs() {
 
 registerButton.addEventListener('click', checkInputs)
 
-
 })()
-
 
